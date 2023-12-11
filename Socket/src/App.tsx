@@ -5,6 +5,7 @@ import "./App.css";
 import { ThemeContext } from "./ThemeContext";
 
 import WebSocketComponent from "./WebSocket";
+import { Counter } from "./Counter";
 
 function App() {
   const { toggle, handleToggle } = useContext(ThemeContext);
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className={`${toggle ? "dark" : ""}`}>
+      {/* <div className={`${toggle ? "dark" : ""}`}>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -34,7 +35,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <WebSocketComponent />
+      <WebSocketComponent /> */}
+      <Counter />
     </>
   );
 }
